@@ -42,12 +42,12 @@ const MainSection = () => {
             style={{
               width: '100%',
               maxWidth: '400px',
-              backgroundColor: 'rgba(255, 255, 255, 0.9)',
+              backgroundColor: 'rgba(255, 255, 255)',
               padding: '30px',
             }}
           >
             <Button text='Book your free consultation' />
-            <h4 className='my-4 fw-bold'>Get a free consultation</h4>
+            <h4 className='my-4 fw-bold .home-link'>Get a free consultation</h4>
             <div className="row">
               <div className='col'>
                 <input

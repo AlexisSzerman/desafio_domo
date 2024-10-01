@@ -18,6 +18,10 @@ p {
   margin-bottom: 30px;
 }
 
+h4 {
+  color:#002A41
+}
+
 .form-control {
   margin-bottom: 15px;
 }
@@ -64,10 +68,43 @@ p {
 }
 
 .bussines {
-  border-bottom: 4px solid #0896FA;
-  padding-bottom: 3px; 
-  display: inline-block; 
+  display: inline-block;
+  transform: scale(0.5); /* Comienza en 0 */
+  animation: grow 3s ease forwards; /* Animación de crecimiento */
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
 }
+
+.bussines::after {
+  content: ''; /* Pseudo-elemento vacío */
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Ajusta la posición vertical del subrayado */
+  height: 4px; /* Grosor del subrayado */
+  background-color: #0896FA; /* Color del subrayado */
+  width: 0; /* Comienza con ancho 0 */
+  transition: width 1s ease 1s; /* Animación suave del ancho con retraso */
+}
+
+.bussines::after {
+  animation: underline 1s ease forwards; /* Animación para el subrayado */
+  animation-delay: 1s; /* Retraso para que comience después de que crezca */
+}
+
+@keyframes grow {
+  to {
+    transform: scale(1); /* Escala normal */
+  }
+}
+
+@keyframes underline {
+  to {
+    width: 100%; /* Se expande al 100% */
+  }
+}
+
+
+
+
 
 
 /* Aplica estilos al placeholder de los inputs */

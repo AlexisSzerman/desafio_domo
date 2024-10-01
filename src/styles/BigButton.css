@@ -1,12 +1,21 @@
+.big-btn {
+  padding: 0.6rem !important; /* 10px ≈ 0.625rem y 130px ≈ 8.125rem */
+  color: #002A41 !important;
+  border: 0.125rem solid #002A41 !important; /* 2px ≈ 0.125rem */
+  background-color: white !important;
+  font-size: 1rem !important;
+  white-space: nowrap; /* Evitar que el texto se divida en dos líneas */
+  width: 100%; /* Asegurarse de que el botón no exceda el contenedor */
+}
+
+@media (max-width: 768px) {
   .big-btn {
-    padding: 10px 130px !important; /* Ajusta el padding si es necesario */
-    min-width: 200px; /* Define un ancho mínimo */
-    color: #002A41 !important;
-    border: 2px solid #002A41 !important;
-    background-color: white !important;
-    font-size: 1rem !important;
-    white-space: nowrap; /* Evitar que el texto se divida en dos líneas */
+      padding: 0.625rem 2rem; /* Reduce el padding en pantallas más pequeñas */
+      min-width: auto; /* Permite que el botón se ajuste automáticamente */
+      font-size: 0.875rem; /* Ajusta el tamaño de la fuente en pantallas más pequeñas */
   }
+}
+
   
   
   .big-btn:hover {
