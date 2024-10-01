@@ -1,0 +1,18 @@
+  .big-btn {
+    padding: 10px 130px !important; /* Ajusta el padding si es necesario */
+    min-width: 200px; /* Define un ancho mínimo */
+    color: #002A41 !important;
+    border: 2px solid #002A41 !important;
+    background-color: white !important;
+    font-size: 1rem !important;
+    white-space: nowrap; /* Evitar que el texto se divida en dos líneas */
+  }
+  
+  
+  .big-btn:hover {
+    background-color: #002A41 !important;
+    color: white !important;
+  }
+  
+  
+  

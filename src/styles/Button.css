@@ -21,3 +21,10 @@
     margin-left: 20px;
   }
   
+
+/* Estilo para el botón variante */
+.btn-variant {
+  background-color: #002A41 !important;
+  color: white !important;
+  border: 2px solid white !important;
+}

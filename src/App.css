@@ -45,3 +45,8 @@ p {
   margin: 0 8px; /* Espaciado entre los enlaces */
   color: #002A41
 }
+
+
+.navbar-nav .nav-link.home-link {
+  color: #41617A !important; 
+}
