@@ -1,0 +1,23 @@
+.custom-btn {
+    border-radius: 50px !important;
+    padding: 5px 10px !important;
+    color: #002A41 !important;
+    border: 2px solid #002A41 !important;
+    background-color: white !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .custom-btn:hover {
+    background-color: #002A41 !important;
+    color: white !important;
+  }
+  
+  .custom-btn .arrow {
+    margin-left: 10px;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .custom-btn:hover .arrow {
+    margin-left: 20px;
+  }
+  

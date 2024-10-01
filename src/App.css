@@ -1,0 +1,47 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid {
+  background-image: url('background-image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+
+.gradient {
+  background: radial-gradient(ellipse at left bottom,#003957 5%, #022A41 95%);
+  color: white !important; 
+}
+
+.logo {
+  height: 40px; 
+  margin-right: 20px; /* Espacio entre el logo y la línea */
+}
+
+.separator {
+  display: inline-block;
+  width: 1.5px; /* Grosor de la línea */
+  height: 40px; /* Altura de la línea */
+  background-color: #DFDFDF; /* Color de la línea */
+  margin-right: 20px; /* Espacio entre la línea y los enlaces */
+}
+
+.navbar-nav .nav-link {
+  margin: 0 8px; /* Espaciado entre los enlaces */
+  color: #002A41
+}
