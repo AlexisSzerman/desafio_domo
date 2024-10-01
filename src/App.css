@@ -24,13 +24,12 @@ p {
 
 
 .gradient {
-  background: radial-gradient(ellipse at left bottom,#003957 5%, #022A41 95%);
+  background: radial-gradient(ellipse at left bottom,#003957 5%, #022A41 95%); 
   color: white !important; 
 }
 
 .logo {
   height: 40px; 
-  margin-right: 20px; /* Espacio entre el logo y la línea */
 }
 
 .separator {
@@ -39,7 +38,15 @@ p {
   height: 40px; /* Altura de la línea */
   background-color: #DFDFDF; /* Color de la línea */
   margin-right: 20px; /* Espacio entre la línea y los enlaces */
+  margin-left: 20px;
 }
+
+.separator-horizontal {
+  width: 80%;               /* Asegura que ocupe todo el ancho del contenedor */
+  border-bottom: 1px solid #41617A;  /* La línea visible */
+  margin: 10px 10px;            /* Espacio alrededor del separador */
+}
+
 
 .navbar-nav .nav-link {
   margin: 0 8px; /* Espaciado entre los enlaces */
@@ -50,3 +57,26 @@ p {
 .navbar-nav .nav-link.home-link {
   color: #41617A !important; 
 }
+
+.big-title { 
+  font-size: 3.5rem;
+  line-height: 0.9;
+}
+
+.bussines {
+  border-bottom: 4px solid #0896FA;
+  padding-bottom: 3px; 
+  display: inline-block; 
+}
+
+
+/* Aplica estilos al placeholder de los inputs */
+input::placeholder, 
+textarea::placeholder {
+  color: #002A41 !important;       
+  font-size: 0.9rem !important; 
+  font-weight: bold;    
+  font-family: 'Roboto', sans-serif; 
+    
+}
+
