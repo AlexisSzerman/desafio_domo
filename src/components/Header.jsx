@@ -2,7 +2,7 @@ import ArrowButton from './ArrowButton';
 
 const Header = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light p-4">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid d-flex align-items-center">
                 {/* Logo SVG Animado */}
                 <svg
@@ -133,4 +133,5 @@ const Header = () => {
 };
 
 export default Header;
+
 

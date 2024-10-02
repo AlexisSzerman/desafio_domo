@@ -4,8 +4,8 @@ import BigButton from './BigButton';
 
 const MainSection = () => {
   return (
-    <div className="container-fluid p-0" style={{ height: '100vh' }}>
-      <div className="row g-0" style={{ height: '100%' }}>
+    <div className="container-fluid-custom p-0" style={{ minHeight: '100vh' }}>
+      <div className="row g-0 h-100"> {/* Asegúrate de que este div tenga h-100 */}
         
         {/* Columna izquierda */}
         <div className="col-md-6 d-flex flex-column justify-content-center align-items-start text-left gradient text-white p-5">
@@ -14,18 +14,16 @@ const MainSection = () => {
             <h2 className="text-start mt-4 big-title">Join us in growing </h2>
             <h2 className='big-title'>your <span className='bussines'>bussines</span></h2>
           </div>
-            
-            <div className='mt-5'>
-
+          
+          <div className='mt-5'>
             <div className='ms-5 separator-horizontal'></div>
-
-          <div className='ms-5 mb-5'>
-            <p className="text-start fs-3">
-            Elevate your business with Businezz X, a professional Webflow template.
-            </p>
-            <ArrowButton text='Contact us' />
-          </div>
+            <div className='ms-5 mb-5'>
+              <p className="text-start fs-3">
+                Elevate your business with Businezz X, a professional Webflow template.
+              </p>
+              <ArrowButton text='Contact us' />
             </div>
+          </div>
         </div>
 
         {/* Columna derecha (Formulario con imagen de fondo) */}
@@ -35,7 +33,6 @@ const MainSection = () => {
             backgroundImage: `url('/office.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            height: '100%',
           }}
         >
           <form
@@ -47,7 +44,7 @@ const MainSection = () => {
             }}
           >
             <Button text='Book your free consultation' />
-            <h4 className='my-4 fw-bold .home-link'>Get a free consultation</h4>
+            <h4 className='my-4 fw-bold'>Get a free consultation</h4>
             <div className="row">
               <div className='col'>
                 <input
@@ -83,3 +80,4 @@ const MainSection = () => {
 };
 
 export default MainSection;
+
