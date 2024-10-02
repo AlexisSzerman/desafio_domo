@@ -69,25 +69,25 @@ h4 {
 
 .bussines {
   display: inline-block;
-  transform: scale(0.5); /* Comienza en 0 */
-  animation: grow 3s ease forwards; /* Animación de crecimiento */
-  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  transform: scale(0.5); 
+  animation: grow 3s ease forwards; 
+  position: relative; 
 }
 
 .bussines::after {
-  content: ''; /* Pseudo-elemento vacío */
+  content: ''; 
   position: absolute;
   left: 0;
-  bottom: -2px; /* Ajusta la posición vertical del subrayado */
-  height: 4px; /* Grosor del subrayado */
-  background-color: #0896FA; /* Color del subrayado */
-  width: 0; /* Comienza con ancho 0 */
-  transition: width 1s ease 1s; /* Animación suave del ancho con retraso */
+  bottom: -2px; 
+  height: 4px; 
+  background-color: #0896FA; 
+  width: 0; 
+  transition: width 1s ease 1s; 
 }
 
 .bussines::after {
-  animation: underline 1s ease forwards; /* Animación para el subrayado */
-  animation-delay: 1s; /* Retraso para que comience después de que crezca */
+  animation: underline 1s ease forwards; 
+  animation-delay: 1s; 
 }
 
 @keyframes grow {
@@ -115,5 +115,11 @@ textarea::placeholder {
   font-weight: bold;    
   font-family: 'Roboto', sans-serif; 
     
+}
+
+footer a i {
+  color: #002A41; 
+  font-size: 2rem;
+
 }
 
