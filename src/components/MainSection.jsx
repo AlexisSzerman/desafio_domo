@@ -4,8 +4,8 @@ import BigButton from './BigButton';
 
 const MainSection = () => {
   return (
-    <div className="container-fluid-custom p-0" style={{ minHeight: '100vh' }}>
-      <div className="row g-0 h-100"> {/* Asegúrate de que este div tenga h-100 */}
+    <div className="container-fluid-custom p-0">
+      <div className="row g-0 h-100"> 
         
         {/* Columna izquierda */}
         <div className="col-md-6 d-flex flex-column justify-content-center align-items-start text-left gradient text-white p-5">
@@ -27,22 +27,8 @@ const MainSection = () => {
         </div>
 
         {/* Columna derecha (Formulario con imagen de fondo) */}
-        <div
-          className="col-md-6 d-flex flex-column justify-content-center align-items-center text-dark p-5"
-          style={{
-            backgroundImage: `url('/office.png')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        >
-          <form
-            style={{
-              width: '100%',
-              maxWidth: '400px',
-              backgroundColor: 'rgba(255, 255, 255)',
-              padding: '30px',
-            }}
-          >
+        <div className="col-md-6 d-flex flex-column justify-content-center align-items-center text-dark p-5 bg-image">
+          <form className="form-container">
             <Button text='Book your free consultation' />
             <h4 className='my-4 fw-bold'>Get a free consultation</h4>
             <div className="row">
@@ -80,4 +66,5 @@ const MainSection = () => {
 };
 
 export default MainSection;
+
 
