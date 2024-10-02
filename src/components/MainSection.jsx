@@ -32,7 +32,7 @@ const MainSection = () => {
         <div
           className="col-md-6 d-flex flex-column justify-content-center align-items-center text-dark p-5"
           style={{
-            backgroundImage: `url('src/assets/office.png')`,
+            backgroundImage: `url('/office.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             height: '100%',

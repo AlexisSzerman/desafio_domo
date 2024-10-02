@@ -13,19 +13,19 @@ const BigButton = ({ text, type = "button", onClick, className = "" }) => {
   );
 };
 
-// Validación de las props
+
 BigButton.propTypes = {
   text: PropTypes.string.isRequired,
   type: PropTypes.string,
   onClick: PropTypes.func,
-  className: PropTypes.string, // Permitir que se pase la clase desde el exterior
+  className: PropTypes.string, 
 };
 
-// Valores por defecto para las props opcionales
+
 BigButton.defaultProps = {
   type: 'button',
-  onClick: () => {}, // Función vacía por defecto
-  className: '', // Clase vacía por defecto
+  onClick: () => {}, 
+  className: '', 
 };
 
 export default BigButton;
